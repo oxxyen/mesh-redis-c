@@ -1,0 +1,79 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #121212;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #333;
+}
+
+#status.connected { color: #4caf50; }
+#status.disconnected { color: #f44336; }
+
+.card {
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+input, button {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  background: #2a2a2a;
+  color: white;
+}
+
+input {
+  width: 200px;
+}
+
+button {
+  cursor: pointer;
+  background: #333;
+}
+
+button:hover {
+  background: #444;
+}
+
+#messages {
+  height: 400px;
+  overflow-y: auto;
+  background: #1a1a1a;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-family: monospace;
+  white-space: pre-wrap;
+}
+
+.message.error { color: #ff6b6b; }
+.message.info { color: #4ecdc4; }
+.message.private { color: #4dabf7; }
+.message.group { color: #ffd43b; }
+
+.input-area {
+  display: flex;
+}
+
+.input-area input {
+  flex: 1;
+  width: auto;
+}
